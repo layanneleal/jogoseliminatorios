@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogos eliminatórios</title>
+  <style>
+    img {
+      height: 300px;
+      width: 300px;
+      float: left;
+      margin-right: 5%;
+    }
+    .box {
+      float: left;
+      margin-left: 20px;
+      min-height: 400px;
+      width: 50%;
+    }
+    h1 {
+      border-bottom: inset;
+    }
+    input #btAdicionar, #btListar, #btMontar {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <img src="Futebol.png" alt="Bola de futebol">
+  <div class="box">
+    <h1>Jogos Eliminatórios</h1>
+    <p>Clube:
+      <input type="text" id="inClube">
+      <input type="button" value="Adicionar" id="btAdicionar">
+    </p>
+    <p>
+      <input type="button" value="Listar clubes" id="btListar">
+      <input type="button" value="Montar tabela de jogos" id="btMontar">
+    </p>
+    <pre id="outTabela"></pre>
+    <pre id="outLista"></pre>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
