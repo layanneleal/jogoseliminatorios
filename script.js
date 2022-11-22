@@ -43,3 +43,23 @@ function listarClubes() {
 }
 let btListar = document.getElementById('btListar')
 btListar.addEventListener('click', listarClubes)
+
+function montarTabela () {
+
+  let jogos = ''
+  let ultimoClube = clubes[clubes.length - 1]
+
+  if ((clubes.length % 2) !== 0 || clubes.length ==0) {
+    alert('Adicione mais um clube para montar a tabela de jogos!')
+    inputClube.focus()
+    return
+}
+  for (let i = 0; i < (clubes.length - 1) / 2; i++) {
+    jogos += clubes[i] + 'x' + ultimoClube - i + '\n'
+  }
+
+  outLista.textContent = jogos
+}
+
+let btMontar = document.getElementById('btMontar')
+btMontar.addEventListener('click', montarTabela)
