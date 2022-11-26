@@ -13,7 +13,7 @@ function adicionarClube() {
     return
   }
   //Adiciona dados ao array de objetos
-  clubes.push({nome: clube})
+  clubes.push({nome:clube})
 
   //Limpa campos e adiciona array em inClube
   inClube.value = ''
@@ -48,7 +48,7 @@ function montarTabela () {
   let jogos = ''
   let ultimoClube = clubes[clubes.length - 1]
 
-  if ((clubes.length % 2) !== 0 || clubes.length ==0) {
+  if ((clubes.length % 2) !== 0 || clubes.length == 0) {
     alert('Adicione mais um clube para montar a tabela de jogos!')
     inClube.focus()
     return
